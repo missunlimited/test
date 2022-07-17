@@ -1,4 +1,6 @@
-package com.test.test.persistence.entity;
+package com.lastExam.lastExam.persistence.entity;
+
+import java.sql.Time;
 
 public class QuestionAnswer {
     private Integer qaId;
@@ -8,6 +10,8 @@ public class QuestionAnswer {
     private String dummyAnswer2;
     private String dummyAnswer3;
     private Boolean correctFlag;
+    private Time answerStart;
+    private Time answerFinish;
 
     public Integer getQaId() {
         return qaId;
@@ -63,5 +67,21 @@ public class QuestionAnswer {
 
     public void setCorrectFlag(Boolean correctFlag) {
         this.correctFlag = correctFlag;
+    }
+
+    public Time getAnswerStart() {
+        return answerStart;
+    }
+
+    public void setAnswerStart(Time answerStart) {
+        this.answerStart = answerStart;
+    }
+
+    public Time getAnswerFinish() {
+        return answerFinish;
+    }
+
+    public void setAnswerFinish(Time answerFinish) {
+        this.answerFinish = answerFinish;
     }
 }

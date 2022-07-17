@@ -1,11 +1,9 @@
-package com.test.test.persistence.entity;
-
-import java.sql.Time;
+package com.lastExam.lastExam.persistence.entity;
 
 public class Summary {
     private Integer summaryId;
     private Integer correct;
-    private Time time;
+    private Integer setQuestionId;
 
     public Integer getSummaryId() {
         return summaryId;
@@ -23,11 +21,11 @@ public class Summary {
         this.correct = correct;
     }
 
-    public Time getTime() {
-        return time;
+    public Integer getSetQuestionId() {
+        return setQuestionId;
     }
 
-    public void setTime(Time time) {
-        this.time = time;
+    public void setSetQuestionId(Integer setQuestionId) {
+        this.setQuestionId = setQuestionId;
     }
 }

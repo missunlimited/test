@@ -1,8 +1,8 @@
-package com.test.test.service.impl;
+package com.lastExam.lastExam.service.impl;
 
-import com.test.test.persistence.entity.QuestionAnswer;
-import com.test.test.persistence.mapper.QuestionAnswerMapper;
-import com.test.test.service.QuestionAnswerService;
+import com.lastExam.lastExam.persistence.entity.QuestionAnswer;
+import com.lastExam.lastExam.persistence.mapper.QuestionAnswerMapper;
+import com.lastExam.lastExam.service.QuestionAnswerService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,7 +25,8 @@ public class QuestionAnswerServiceImpl implements QuestionAnswerService {
 
     @Override
     @Transactional(readOnly = true)
-    public QuestionAnswer findById() {
-
+    public QuestionAnswer findById(Integer qaId) {
+        QuestionAnswer questionAnswer = questionAnswerMapper.findById(qaId);
+        return questionAnswer;
     }
 }
