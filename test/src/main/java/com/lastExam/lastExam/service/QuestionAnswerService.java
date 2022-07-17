@@ -1,6 +1,6 @@
-package com.test.test.service;
+package com.lastExam.lastExam.service;
 
-import com.test.test.persistence.entity.QuestionAnswer;
+import com.lastExam.lastExam.persistence.entity.QuestionAnswer;
 
 import java.util.List;
 

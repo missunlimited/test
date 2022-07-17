@@ -1,4 +1,4 @@
-package com.test.test;
+package com.lastExam.lastExam;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
